@@ -11,7 +11,7 @@
 <body>
     <h1 style="text-align: center;">MASUK KALKULATOR</h1>
     <form action="display.php" method="post" class="formData">
-        Nama : <input type="text" name="nama" placeholder="Masukkan Nama"><br><br>
+        Nama : <input type="text" name="nama" placeholder="Masukkan Nama" required oninvalid="this.setCustomValidity('Nama Wajib Di Isi')"><br><br>
         Email : <input type="text" name="email" placeholder="Masukkan Email" required oninvalid="this.setCustomValidity('Email Tidak Boleh Kosong')"><br><br>
         Jenis Kelamin : <br>
         <input type="radio" name="gender" value="Male">Male<br>
